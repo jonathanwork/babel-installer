@@ -1,0 +1,22 @@
+{
+  "name": "babel-installer",
+  "version": "1.0.0",
+  "description": "simple npm babel installer",
+  "main": "babel_installer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "babel",
+    "installer",
+    "script"
+  ],
+  "author": "Jonathan R. Lopez",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}
