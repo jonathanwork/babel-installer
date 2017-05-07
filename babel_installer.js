@@ -24,14 +24,14 @@ fs.stat('package.json', (err, stat)=> {
 
   // write to babel rc
   var babelrcFile = '{\"presets\": [\"env\"]}';
-  
+
   fs.writeFile('.babelrc', babelrcFile, err=> {
     if(err) console.error(err);
     console.log('.babelrc file written');
   })
 
   //if no error run this script
-  exec('npm install --save-dev babel-cli babel-preset-env babel-polyfill babel-preset-react'
+  exec('npm install --save-dev babel-cli babel-preset-env babel-polyfill babel-preset-react babel-loader babel-preset-es2015 babel-preset-stage-2'
   ,(err, stdout, stderr)=> {
     console.log(`${stdout}`);
     console.log(`${stderr}`);
